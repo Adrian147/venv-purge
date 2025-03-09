@@ -10,9 +10,13 @@
 				"charliermarsh.ruff",
 				"ms-python.mypy-type-checker",
 				"github.vscode-github-actions"
-			]
+			],
+			"settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.packaging.manager": "uv"
+			}
 		}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -21,7 +25,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "curl -fsSL https://bootstrap.pypa.io/get-pip.py | python - && pip install uv && uv self"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
