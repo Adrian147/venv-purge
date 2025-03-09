@@ -1,0 +1,21 @@
+[project]
+name = "venv-purge"
+version = "0.1.0"
+description = "A CLI tool to manage Python virtual environments."
+authors = [
+    { name = "Adrian McDonald Tariang", email = "adrian47mcdonald@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Adrian147/venv-purge"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pre-commit>=4.1.0",
+    "ruff>=0.9.10",
+]
