@@ -25,7 +25,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "curl -fsSL https://bootstrap.pypa.io/get-pip.py | python - && pip install uv && uv self"
+	"postCreateCommand": "curl -fsSL https://bootstrap.pypa.io/get-pip.py | python - && pip install uv && uv sync"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
